@@ -92,27 +92,19 @@ const Sidebar = () => {
     ];
 
     return (
-        <Container fluid>
-            <Row className="noMargin">
-                <Col xs={1}>
-                    <Navbar variant="dark" className="sidebar" expand="s">
-                        <NavLink><a href="/overview/">Overview</a></NavLink>
-                        {menuData.map((data, index) => (
-                            <NavItem key={index}>
-                                <ToggleMenu buttonText={data.buttonText} menuItems={data.menuItems} />
-                            </NavItem>
-                        ))}
-                        <NavItem></NavItem>
-                    </Navbar>
-                </Col>
-                <Col xs={5}>
-
-                </Col>
-                <Col xs={5}>
-
-                </Col>
-            </Row>
-        </Container>
+            <Col sm={2}>
+              <Col sm={1}>
+                <Navbar variant="dark" expand={false}>
+                  <NavLink ><a href="/overview/" className="sidebar-button">Overview</a></NavLink>
+                  {menuData.map((data, index) => (
+                    <NavItem key={index}>
+                      <ToggleMenu buttonText={data.buttonText} menuItems={data.menuItems} />
+                    </NavItem>
+                  ))}
+                  <NavItem></NavItem>
+                </Navbar>
+              </Col>
+            </Col>
     );
 };
 
