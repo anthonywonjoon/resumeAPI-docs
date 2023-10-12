@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://anthonywonjoon.github.io/resumeapi-docs/blog</id>
+    <title>Anthony's ResumeAPI Blog</title>
+    <updated>2023-10-11T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://anthonywonjoon.github.io/resumeapi-docs/blog"/>
+    <subtitle>Anthony's ResumeAPI Blog</subtitle>
+    <icon>https://anthonywonjoon.github.io/resumeapi-docs/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Welcome]]></title>
+        <id>https://anthonywonjoon.github.io/resumeapi-docs/blog/welcome</id>
+        <link href="https://anthonywonjoon.github.io/resumeapi-docs/blog/welcome"/>
+        <updated>2023-10-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hello and Welcome to ResumeAPI, a personal project that I took on to learn more about backend/api development, databases, and servers.]]></summary>
+        <content type="html"><![CDATA[<p>Hello and Welcome to ResumeAPI, a personal project that I took on to learn more about backend/api development, databases, and servers.</p><p>My name is Anthony Lee, a senior at the University of Hawaii at Manoa studying Management Information Systems and Computer Science. My career interest is in Software Engineering, specifically backend or fullstack. </p><p>In order to hone my skills and prepare for the job market, I developed this project in order to showcase my development skills, my commitment to learning, and also give anyone who wants to see my resume a cool way to do so in my own way.</p>]]></content>
+        <author>
+            <name>Anthony Lee</name>
+            <uri>https://linkedin.com/anthonywonjoon</uri>
+        </author>
+        <category label="backend" term="backend"/>
+        <category label="api" term="api"/>
+        <category label="documentation" term="documentation"/>
+    </entry>
+</feed>

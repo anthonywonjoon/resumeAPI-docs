@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkresume_docs=self.webpackChunkresume_docs||[]).push([[1728],{4006:e=>{e.exports=JSON.parse('[{"label":"backend","permalink":"/resumeapi-docs/blog/tags/backend","count":1},{"label":"api","permalink":"/resumeapi-docs/blog/tags/api","count":1},{"label":"documentation","permalink":"/resumeapi-docs/blog/tags/documentation","count":1}]')}}]);
