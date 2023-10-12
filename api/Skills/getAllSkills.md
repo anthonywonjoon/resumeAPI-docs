@@ -4,3 +4,9 @@ slug: /api/skills/get-all-skills
 ---
 
 # Get All Skills
+
+:::caution
+
+Coming Soon
+
+:::

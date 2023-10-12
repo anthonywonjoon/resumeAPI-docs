@@ -4,3 +4,9 @@ slug: /api/skills/get-skills-by-name
 ---
 
 # Get Skills By Name
+
+:::caution
+
+Coming Soon
+
+:::

@@ -4,3 +4,9 @@ slug: /api/edu/get-relevant-courses
 ---
 
 # Get Relevant Courses
+
+:::caution
+
+Coming Soon
+
+:::

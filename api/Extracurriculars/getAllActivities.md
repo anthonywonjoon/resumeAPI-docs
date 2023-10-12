@@ -4,3 +4,9 @@ slug: /api/extra/get-all-activities
 ---
 
 # Get All Extracurriculars
+
+:::caution
+
+Coming Soon
+
+:::

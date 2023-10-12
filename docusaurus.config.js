@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: "Anthony's ResumeAPI",
   tagline: "Showcasing My Backend Skills - Your Gateway to My Resume",
-  favicon: 'img/favicon.ico',
+  favicon: 'img/cv.png',
 
   // Set the production url of your site here
   url: 'https://anthonywonjoon.github.io',
@@ -79,12 +79,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/resumeapi-social-card.png',
       navbar: {
-        title: 'ResumeAPI Docs',
+        title: 'ResumeAPI',
         logo: {
           alt: 'ResumeAPI Docs Logo',
-          src: 'img/logo.svg',
+          src: 'img/cv.png',
         },
         items: [
           /**
@@ -99,7 +99,7 @@ const config = {
           {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/api', label: 'API', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/anthonywonjoon',
             label: 'GitHub',
             position: 'right',
           }

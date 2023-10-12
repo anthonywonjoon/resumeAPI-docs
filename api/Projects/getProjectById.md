@@ -4,3 +4,9 @@ slug: /api/projects/get-project-by-id
 ---
 
 # Get Project By ID
+
+:::caution
+
+Coming Soon
+
+:::

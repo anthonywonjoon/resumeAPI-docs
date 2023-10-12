@@ -4,3 +4,9 @@ slug: /api/bio/get-name
 ---
 
 # Get Name
+
+:::caution
+
+Coming Soon
+
+:::
