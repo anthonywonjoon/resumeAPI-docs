@@ -20,6 +20,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'anthonywonjoon', // Usually your GitHub org/user name.
   projectName: 'resumeapi-docs', // Usually your repo name.
+  deploymentBranch: 'deployment',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
