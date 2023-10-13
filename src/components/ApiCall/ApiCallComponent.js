@@ -1,18 +1,36 @@
 import React, {useEffect, useState} from 'react';
 
-const ApiCallComponent = () => {
+const ApiCallComponent = ({url} ) => {
     const [data, setData] = useState([]);
+    const apiUrl = 'http://testbed1.soest.hawaii.edu:2223/api/v1/' + url;
 
-    fetch('http://testbed1.soest.hawaii.edu:2223/bio/getAll', {
+    useEffect(() => {
+      console.log("apiUrl: " + apiUrl);
+      fetch(apiUrl, {
         method: 'GET',
-        mode: 'no-cors'
-    })
+      })
         .then(response => response.text())
-        .then(data => console.log(data))
+        .then(data => {
+          let dataObj = JSON.parse(data);
+          data =JSON.stringify(dataObj, null, 2);
+          setData(data);
+        })
         .catch(error => console.log(error));
+    }, []);
 
     return (
-        <div>d</div>
+      <div>
+        {data ? (
+          // Render data in your component
+          <pre>
+            <code className="json">
+              {data}
+            </code>
+          </pre>
+        ) : (
+          <p>Loading data...</p>
+        )}
+      </div>
     )
 };
 
