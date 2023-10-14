@@ -4,7 +4,22 @@ slug: '/api/fullResume'
 ---
 import ApiCallComponent from '@site/src/components/ApiCall/ApiCallComponent.js';
 import './full-resume-style.css';
+export const apiUrl = 'http://testbed1.soest.hawaii.edu:2223/api/v1/fullResume'
+export const apiCall = () => {
+    fetch(apiUrl, {
+            method: 'GET',
+          })
+            .then(response => response.text())
+            .then(data => {
+              let dataObj = JSON.parse(data);
+              data =JSON.stringify(dataObj, null, 2);
+              setData(data);
+            })
+            .catch(error => console.log(error));
+}
 
 # Full Resume
+
+
 
 <ApiCallComponent url="fullResume" />
