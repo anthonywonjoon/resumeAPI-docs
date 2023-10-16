@@ -1,8 +1,0 @@
-.two-column-container {
-  display: flex;
-}
-
-.left-column, .right-column {
-  flex: 1;
-  padding: 10px;
-}

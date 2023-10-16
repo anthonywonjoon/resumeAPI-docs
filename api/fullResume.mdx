@@ -2,24 +2,51 @@
 sidebar_position: 2
 slug: '/api/fullResume'
 ---
+
 import ApiCallComponent from '@site/src/components/ApiCall/ApiCallComponent.js';
+import BioComponent from '../src/components/ResponseAttributes/BioComponent';
+import EduComponent from '../src/components/ResponseAttributes/EduComponent';
+import ExpComponent from '../src/components/ResponseAttributes/ExpComponent';
+import ProjectComponent from '../src/components/ResponseAttributes/ProjectComponent';
+import SkillComponent from '../src/components/ResponseAttributes/SkillComponent';
+import ActivityComponent from '../src/components/ResponseAttributes/ActivityComponent';
+
+
 import './full-resume-style.css';
-export const apiUrl = 'http://testbed1.soest.hawaii.edu:2223/api/v1/fullResume'
-export const apiCall = () => {
-    fetch(apiUrl, {
-            method: 'GET',
-          })
-            .then(response => response.text())
-            .then(data => {
-              let dataObj = JSON.parse(data);
-              data =JSON.stringify(dataObj, null, 2);
-              setData(data);
-            })
-            .catch(error => console.log(error));
-}
 
 # Full Resume
 
+<div id="top"></div>
 
+Get the Full Resume containing Biography, Education, Experiences, Projects, Skills, and Extracurriculars
+
+:::note
+
+- Working on a cleaner way to list bullets for description
+- Working on a cleaner UI for entity descriptions
+:::
+
+## Request
+---
+
+**GET */api/v1/fullResume* **
+
+## Response
+---
+<BioComponent />
+<EduComponent />
+<ExpComponent />
+<ProjectComponent />
+<SkillComponent />
+<ActivityComponent />
+
+
+## Try it out
+---
 
 <ApiCallComponent url="fullResume" />
+
+<a href="#top">Back to top</a>
+
+
+

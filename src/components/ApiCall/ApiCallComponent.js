@@ -1,11 +1,13 @@
 import React, {useEffect, useState} from 'react';
+import CodeBlock from '@theme/CodeBlock';
+import './apiCallComponent-style.css'
+import { Col } from 'react-bootstrap';
 
 const ApiCallComponent = ({url} ) => {
     const [data, setData] = useState([]);
     const apiUrl = 'http://testbed1.soest.hawaii.edu:2223/api/v1/' + url;
 
-    useEffect(() => {
-      console.log("apiUrl: " + apiUrl);
+    function apiCall() {
       fetch(apiUrl, {
         method: 'GET',
       })
@@ -16,22 +18,44 @@ const ApiCallComponent = ({url} ) => {
           setData(data);
         })
         .catch(error => console.log(error));
-    }, []);
+    }
 
     return (
       <div>
+        <button onClick={apiCall}>Call /api/v1/fullResume</button>
+        {data &&
+          <pre>
+            <CodeBlock
+              className="apiWindow"
+              language="json"
+              title="/api/v1/fullResume"
+              showLineNumbers>
+              {data}
+            </CodeBlock>
+          </pre>
+          }
+      </div>
+    )
+    /*
+    return (
+      <Col>
         {data ? (
           // Render data in your component
           <pre>
-            <code className="json">
+            <CodeBlock
+              className="apiWindow"
+              language="json"
+              title="/api/v1/fullResume"
+              showLineNumbers>
               {data}
-            </code>
+            </CodeBlock>
           </pre>
         ) : (
           <p>Loading data...</p>
         )}
-      </div>
+      </Col>
     )
+    */
 };
 
 export default ApiCallComponent;
