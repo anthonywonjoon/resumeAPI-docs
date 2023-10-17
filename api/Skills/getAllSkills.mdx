@@ -1,0 +1,36 @@
+---
+sidebar_position: 1
+slug: /skills/get-all-skills
+---
+import ApiCallComponent from '../../src/components/ApiCall/ApiCallComponent';
+import SkillComponent from '../../src/components/ResponseAttributes/SkillComponent';
+
+# Get All Skills
+
+<div id="top"></div>
+
+Get the full skills section from my resume
+
+:::note
+
+- Working on a cleaner way to list bullets for description
+- Working on a cleaner UI for entity descriptions
+:::
+
+
+## Request
+---
+
+**GET */api/v1/skills/getAll* **
+
+## Response
+---
+<SkillComponent type="array of SkillEntity" />
+
+
+## Try it out
+---
+
+<ApiCallComponent url="skills/getAll" />
+
+<a href="#top">Back to top</a>

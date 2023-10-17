@@ -1,0 +1,36 @@
+---
+sidebar_position: 1
+slug: /exp/get-all-experiences
+---
+import ApiCallComponent from '../../src/components/ApiCall/ApiCallComponent';
+import ExpComponent from '../../src/components/ResponseAttributes/ExpComponent';
+
+# Get All Experiences
+
+<div id="top"></div>
+
+Get the full experiences section from my resume
+
+:::note
+
+- Working on a cleaner way to list bullets for description
+- Working on a cleaner UI for entity descriptions
+:::
+
+
+## Request
+---
+
+**GET */api/v1/exp/getAll* **
+
+## Response
+---
+<ExpComponent type="array of ExpEntity" />
+
+
+## Try it out
+---
+
+<ApiCallComponent url="exp/getAll" />
+
+<a href="#top">Back to top</a>

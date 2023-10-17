@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import CodeBlock from '@theme/CodeBlock';
 import './apiCallComponent-style.css'
-import { Col } from 'react-bootstrap';
 
 const ApiCallComponent = ({url} ) => {
     const [data, setData] = useState([]);
     const apiUrl = 'https://resume-api-fnk7.onrender.com/api/v1/' + url;
+    const endpoint = "/api/v1/" + url;
 
     function apiCall() {
       fetch(apiUrl, {
@@ -22,7 +22,7 @@ const ApiCallComponent = ({url} ) => {
 
     return (
       <div>
-        <button onClick={apiCall}>Call /api/v1/fullResume</button>
+        <button className="apiButton" onClick={apiCall}>Call {endpoint}</button>
         {data &&
           <pre>
             <CodeBlock

@@ -1,0 +1,36 @@
+---
+sidebar_position: 1
+slug: /projects/get-all-projects
+---
+import ApiCallComponent from '../../src/components/ApiCall/ApiCallComponent';
+import ProjectComponent from '../../src/components/ResponseAttributes/ProjectComponent';
+
+# Get All Projects
+
+<div id="top"></div>
+
+Get the full experiences section from my resume
+
+:::note
+
+- Working on a cleaner way to list bullets for description
+- Working on a cleaner UI for entity descriptions
+:::
+
+
+## Request
+---
+
+**GET */api/v1/projects/getAll* **
+
+## Response
+---
+<ProjectComponent type="array of ProjectEntity" />
+
+
+## Try it out
+---
+
+<ApiCallComponent url="projects/getAll" />
+
+<a href="#top">Back to top</a>

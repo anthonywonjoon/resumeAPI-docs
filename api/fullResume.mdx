@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: '/api/fullResume'
+slug: '/fullResume'
 ---
 
 import ApiCallComponent from '@site/src/components/ApiCall/ApiCallComponent.js';
@@ -35,10 +35,10 @@ Get the Full Resume containing Biography, Education, Experiences, Projects, Skil
 ---
 <BioComponent />
 <EduComponent />
-<ExpComponent />
-<ProjectComponent />
-<SkillComponent />
-<ActivityComponent />
+<ExpComponent type="array of ExperienceEntity" />
+<ProjectComponent type="array of ProjectEntity" />
+<SkillComponent type="array of SkillEntity" />
+<ActivityComponent type="array of ActivityEntity" />
 
 
 ## Try it out

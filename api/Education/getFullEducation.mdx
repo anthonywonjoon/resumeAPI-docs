@@ -1,0 +1,37 @@
+---
+sidebar_position: 1
+slug: /edu/get-full-education
+---
+import ApiCallComponent from '../../src/components/ApiCall/ApiCallComponent';
+import EduComponent from '../../src/components/ResponseAttributes/EduComponent';
+
+
+# Get Full Education
+
+<div id="top"></div>
+
+Get the full biography section of the resume
+
+:::note
+
+- Working on a cleaner way to list bullets for description
+- Working on a cleaner UI for entity descriptions
+:::
+
+
+## Request
+---
+
+**GET */api/v1/edu/getAll* **
+
+## Response
+---
+<EduComponent type="EduEntity" />
+
+
+## Try it out
+---
+
+<ApiCallComponent url="edu/getAll" />
+
+<a href="#top">Back to top</a>

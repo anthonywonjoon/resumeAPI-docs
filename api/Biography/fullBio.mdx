@@ -1,0 +1,36 @@
+---
+sidebar_position: 1
+slug: /bio/get-full-bio
+---
+import ApiCallComponent from '../../src/components/ApiCall/ApiCallComponent';
+import BioComponent from '../../src/components/ResponseAttributes/BioComponent';
+
+# Get Full Biography
+
+<div id="top"></div>
+
+Get the full biography section of the resume
+
+:::note
+
+- Working on a cleaner way to list bullets for description
+- Working on a cleaner UI for entity descriptions
+:::
+
+
+## Request
+---
+
+**GET */api/v1/bio/getAll* **
+
+## Response
+---
+<BioComponent type="BioEntity" />
+
+
+## Try it out
+---
+
+<ApiCallComponent url="bio/getAll" />
+
+<a href="#top">Back to top</a>
