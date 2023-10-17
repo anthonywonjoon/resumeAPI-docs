@@ -28,7 +28,7 @@ const ApiCallComponent = ({url} ) => {
             <CodeBlock
               className="apiWindow"
               language="json"
-              title="/api/v1/fullResume"
+              title={endpoint}
               showLineNumbers>
               {data}
             </CodeBlock>
@@ -36,26 +36,6 @@ const ApiCallComponent = ({url} ) => {
           }
       </div>
     )
-    /*
-    return (
-      <Col>
-        {data ? (
-          // Render data in your component
-          <pre>
-            <CodeBlock
-              className="apiWindow"
-              language="json"
-              title="/api/v1/fullResume"
-              showLineNumbers>
-              {data}
-            </CodeBlock>
-          </pre>
-        ) : (
-          <p>Loading data...</p>
-        )}
-      </Col>
-    )
-    */
 };
 
 export default ApiCallComponent;
