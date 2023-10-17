@@ -5,7 +5,7 @@ import { Col } from 'react-bootstrap';
 
 const ApiCallComponent = ({url} ) => {
     const [data, setData] = useState([]);
-    const apiUrl = 'http://testbed1.soest.hawaii.edu:2223/api/v1/' + url;
+    const apiUrl = 'https://resume-api-fnk7.onrender.com/api/v1' + url;
 
     function apiCall() {
       fetch(apiUrl, {
