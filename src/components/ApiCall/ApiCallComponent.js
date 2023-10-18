@@ -4,10 +4,12 @@ import './apiCallComponent-style.css'
 
 const ApiCallComponent = ({url} ) => {
     const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(false);
     const apiUrl = 'https://resume-api-fnk7.onrender.com/api/v1/' + url;
     const endpoint = "/api/v1/" + url;
 
     function apiCall() {
+        setLoading(true);
       fetch(apiUrl, {
         method: 'GET',
       })
@@ -17,12 +19,15 @@ const ApiCallComponent = ({url} ) => {
           data =JSON.stringify(dataObj, null, 2);
           setData(data);
         })
-        .catch(error => console.log(error));
+        .catch(error => console.log(error))
+        .finally(() => {
+            setLoading(false);
+        })
     }
 
     return (
       <div>
-        <button className="apiButton" onClick={apiCall}>Call {endpoint}</button>
+        <button className="apiButton" onClick={apiCall}>{loading ? <>Loading..</> : <>Call {endpoint}</>}</button>
         {data &&
           <pre>
             <CodeBlock
